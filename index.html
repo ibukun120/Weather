@@ -14,7 +14,7 @@
     <div id="search" class="flex w-full justify-between items-center">
       <input type="text" placeholder="Enter city name" spellcheck="false" class="flex-1 outline-none bg-white mr-4 rounded-full pl-6 py-2 h-12">
       <button class="flex bg-gray-100 w-10 h-10         justify-center items-center rounded-full ">
-        <img src="search.png" alt="" class="w-4">
+        <img src="image/search.png" alt="" class="w-4">
       </button>
     </div>
 
@@ -23,20 +23,20 @@
     </div>
 
     <div class=" weather hidden text-white">
-      <img src="rain.png" alt="" class="weather-icon w-32 mx-auto">
+      <img src="image/rain.png" alt="" class="weather-icon w-32 mx-auto">
       <h1 id="temp" class="temp text-6xl font-medium">22°C</h1>
       <h2 id="city" class="city text-4xl font-medium">New York</h2>
 
       <div class="flex mt-10 items-center justify-between px-">
         <div class="flex text-left items-center">
-          <img src="humidity.png" alt="" class="w-8 mr-2">
+          <img src="image/humidity.png" alt="" class="w-8 mr-2">
           <div>
             <p id="humidity" class="humidity">50%</p>
             <p>Humidity</p>
           </div>
         </div>
         <div class="flex text-left items-center">
-          <img src="wind.png" alt="" class="w-8 mr-2">
+          <img src="image/wind.png" alt="" class="w-8 mr-2">
           <div>
             <p id="wind" class="wind">15 km/hr</p>
             <p>Wind speed</p>
@@ -77,19 +77,19 @@
 
 
       if(data.weather[0].main == "clouds"){
-        weatherIcon.src = "clouds.png"
+        weatherIcon.src = "image/clouds.png"
       }else
       if(data.weather[0].main == "clear"){
-        weatherIcon.src = "clear.png"
+        weatherIcon.src = "image/clear.png"
       }else
       if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "rain.png"
+        weatherIcon.src = "image/rain.png"
     }else
     if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "drizzle.png"
+        weatherIcon.src = "image/drizzle.png"
     }else
     if(data.weather[0].main == "Mist"){
-        weatherIcon.src = "mist.png"
+        weatherIcon.src = "image/mist.png"
     }
 
     document.querySelector(".weather").style.display = "block";
